@@ -17,3 +17,6 @@ namespace Sweepstakes
         //last line of main bits
     }
 }
+/*
+Implement dependency injection so that I can utilize a sweepstakes manager
+*/

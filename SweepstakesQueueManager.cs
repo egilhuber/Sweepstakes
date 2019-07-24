@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Sweepstakes
 {
-    class SweepstakesQueueManager
+    class SweepstakesQueueManager : ISweepstakesManager
     {
         //member variables
 
@@ -17,3 +17,8 @@ namespace Sweepstakes
         //last line of main bits
     }
 }
+/*
+uses queue data structure
+
+Should inherit from ISweepstakesManager interface and implement the methods from the interface using queue methods
+*/
