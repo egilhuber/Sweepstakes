@@ -12,6 +12,8 @@ namespace Sweepstakes
 
         //ctor
 
+        //dependency injection goes here?
+
         //member methods
 
         //last line of main bits

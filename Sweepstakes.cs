@@ -9,10 +9,34 @@ namespace Sweepstakes
     class Sweepstakes
     {
         //member variables
-
+        string Name;
         //ctor
-
+        public Sweepstakes(string name)
+        {
+            Name = name;
+        }
         //member methods
+
+        Contestant newContestant = new Contestant();
+        
+
+        public void RegisterContestant(Contestant contestant) //
+        {
+            Dictionary<int, string> contestants = new Dictionary<int, string>();
+            contestants.Add(contestant.registrationNumber, contestant.firstName);
+        }
+
+        public string PickWinner()
+        {
+
+        }
+
+        public void PrintContestantInfo(Contestant contestant)
+        {
+
+        }
+
+
 
         //last line of main bits
     }
