@@ -14,6 +14,12 @@ namespace Sweepstakes
         public string emailInput;
         public int regNumber = 10000;
         public Contestant newContestant;
+        public string response;
+        public string noResponse;
+        public string user = "admin";
+        public string pass = "admin";
+        public string userResponse;
+        public string passResponse;
 
         //ctor
         public UserInterface()
@@ -53,6 +59,36 @@ namespace Sweepstakes
             regNumber++;
             Console.WriteLine($"Your registration number is: {regNumber}");
             return regNumber;
+        }
+
+        public string EnterOrEnd()
+        {
+            
+            Console.WriteLine("Would you like to enter the sweepstakes?");
+            response = Console.ReadLine();
+            return response;
+        }
+
+        public string EndSweepstakes()
+        {
+            Console.WriteLine("Would you like to select the winner?");
+            noResponse = Console.ReadLine();
+            return noResponse;
+        }
+
+        public string EnterUser()
+        {
+            Console.WriteLine("Enter username");
+            userResponse = Console.ReadLine();
+            return userResponse;
+
+        }
+
+        public string EnterPass()
+        {
+            Console.WriteLine("Enter password");
+            passResponse = Console.ReadLine();
+            return passResponse;
         }
 
         //last line of main bits

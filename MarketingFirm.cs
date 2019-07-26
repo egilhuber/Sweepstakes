@@ -9,9 +9,12 @@ namespace Sweepstakes
     class MarketingFirm
     {
         //member variables
-
+        ISweepstakesManager Manager;
         //ctor
-
+        public MarketingFirm(ISweepstakesManager manager)
+        {
+            this.Manager = manager;
+        }
         //dependency injection goes here?
 
         //member methods
